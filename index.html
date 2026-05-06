@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div class="header">
+      <span id="progress"></span>
+      <span id="scoreLive">Score: 0</span>
+    </div>
+
+    <div id="quiz"></div>
+
+    <div class="nav-buttons">
+      <button id="prevBtn">Back</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+
+<script src="quiz.data.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CMDB-CSDM CIS DF Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+
+<!-- ================= HOME SCREEN ================= -->
+<div id="home" class="home-container">
+  <h1>CMDB-CSDM CIS DF Quiz</h1>
+
+  <button onclick="startQuiz(75)">Random 75Q</button>
+  <button onclick="startQuiz('all')">Random All</button>
+  <button onclick="startQuiz('sequence')">All in Sequence</button>
+  <button class="study" onclick="startStudy()">Study MCQs</button>
+
+</div>
+
+<!-- ================= QUIZ SCREEN ================= -->
+<div id="quizApp" class="quiz-container hidden">
+  <div class="header">
+    <span id="progress"></span>
+    <span id="scoreLive"></span>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="nav-buttons">
+    <button id="prevBtn">Back</button>
+    <button id="nextBtn">Next</button>
+  </div>
+</div>
+
+<script src="quiz.data.js"></script>
+<script src="quiz.js"></script>
+<script src="quiz.control.js"></script>
+
+</body>
+</html>
+<!-- 
+ match type question
+  {
+    type: "match",
+    question: ,
+    options: [
+
+    ],
+    answers: [
+      { label: "", correct: "" },
+    ]
+  }
+
+  ---------------
+
+  {
+    type: "mcq",
+    question: "",
+    options: shuffle([
+      
+    ]),
+    answer: [""]
+  },
+
+  --------
+
+  {
+  type: "multiple",
+  question: "",
+  options: shuffle([
+  ]),
+  answer: [""]
+  },
+
+
+-->
